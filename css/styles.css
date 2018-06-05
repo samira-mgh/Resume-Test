@@ -77,12 +77,19 @@ html {
 }
 
 
-.fa {
+.social-icons .fa {
     font-size: 30px;
     width: 50px;
     text-align: center;
     text-decoration: none;
     color: gray;
+}
+.icon-experience .fa {
+    text-align: center;
+    text-decoration: none;
+    color: gray;
+    font-size: 21px;
+    width: 30px;
 }
 
 .social-icons{
@@ -209,24 +216,23 @@ i{
     padding-right: 15px;
 }
 .icon-experience{
-    margin-left: 130px;
-    padding: 8px 13px;
+    margin-left: 147px;
+    padding: 5px 5px;
     background-color: #ffffff;
     display: inline-block;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.15), 0 2px 10px 0 rgba(0,0,0,0.11);
 }
 .all-experience{
-    border-left: 5px solid;
-    border-left-color: #ffffff;
-    padding-top: 45px;
-    padding-left: 23px;
-
+    border-left: 5px solid #a8a8a8;
+    margin-left: 166px;
+    padding-top: 4px;
+    padding-left: 26px;
 }
 .experience-content{
     background-color: #ffffff;
     padding: 30px;
     margin-bottom: 45px;
     margin-top: 45px;
-    margin-left: 180px;
     font-size: 15px;
     display: block;
     box-sizing: border-box;
@@ -239,7 +245,7 @@ i{
     padding-top: 10px;
     padding-bottom: 10px;
     margin-top: -30px;
-    left: 15px;
+    left: 0;
     width: 156px;
     text-align: center;
 }
