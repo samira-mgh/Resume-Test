@@ -76,6 +76,11 @@ html {
     border-radius: 2px;
 }
 
+#test{
+   overflow: hidden;
+    height: 0;
+}
+
 
 .social-icons .fa {
     font-size: 30px;

@@ -43,17 +43,54 @@
             </ul>
 
         </div>
-        <p class="text-left">
+        <p class="text-left" id="test" style="">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi venenatis et tortor ac tincidunt.
             In euismod iaculis lobortis. Vestibulum posuere molestie ipsum vel sollicitudin. Vestibulum
             venenatis pharetra mi, ut vestibulum elit ultricies a. Vestibulum at mollis ex, ac consectetur
             massa. Donec nunc dui, laoreet a nibh et, semper tincidunt nunc. Donec ac posuere tellus.
             Pellentesque tempus suscipit velit sit amet bibendum.
         </p>
+        <script>
+            (function () {
 
+
+            var x = 0;
+            function doIt() {
+                var item = document.getElementById("test");
+
+                function slide100() {
+                    x++;
+                    item.style.height = x + "px";
+                    console.log(x)
+                    if (x === 100) {
+                        clearInterval(setInter)
+                    }
+                }
+
+                function slide0() {
+                    x--;
+                    item.style.height = x + "px";
+                    if (x === 0) {
+                        clearInterval(setInter)
+                    }
+                }
+
+                if (x === 0) {
+                    var setInter = setInterval(slide100, 1)
+                }
+                else if (x === 100) {
+                    console.log(x)
+                    setInter = setInterval(slide0, 1)
+                }
+
+            }
+            window.onload = function (){document.getElementById("doIt").addEventListener("click",doIt)};
+            })();
+
+        </script>
         <div class="row"></div>
         <div class="col col-xs-12 col-sm-12 col-md-12">
-            <a href="#" class="btn btn-info ">Download CV</a>
+            <a id="doIt" href="#" class="btn btn-info " >Download CV</a>
             <a href="#" class="btn btn-info ">Contact Me</a>
 
         </div>
@@ -257,45 +294,49 @@
                   <i class="fa fa-suitcase"></i>
                   </span>
                 <div class="all-experience">
-                <div class="experience-content">
-                    <span class="experience-period"> 06/2017 - Current</span>
-                    <h3 class="speciality-name"> Project Coordinator</h3>
-                    <h3 class="location"> GFZ German Research Centre for Geosciences, Germany</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In semper lacus tortor, quis bibendum
-                        odio mattis vitae. Cras porta massa pretium auctor congue. Suspendisse ante massa, euismod
-                        sit amet sem sed, viverra tristique diam.</p>
+                    <div class="experience-content">
+                        <span class="experience-period"> 06/2017 - Current</span>
+                        <h3 class="speciality-name"> Project Coordinator</h3>
+                        <h3 class="location"> GFZ German Research Centre for Geosciences, Germany</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In semper lacus tortor, quis
+                            bibendum
+                            odio mattis vitae. Cras porta massa pretium auctor congue. Suspendisse ante massa, euismod
+                            sit amet sem sed, viverra tristique diam.</p>
 
-                </div>
+                    </div>
 
-                <div class="experience-content">
-                    <span class="experience-period"> 07/2017 - 05/2017</span>
-                    <h3 class="speciality-name"> PostDoc Researcher</h3>
-                    <h3 class="location"> University of Calgary, Canada</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In semper lacus tortor, quis bibendum
-                        odio mattis vitae. Cras porta massa pretium auctor congue. Suspendisse ante massa, euismod
-                        sit amet sem sed, viverra tristique diam.</p>
+                    <div class="experience-content">
+                        <span class="experience-period"> 07/2017 - 05/2017</span>
+                        <h3 class="speciality-name"> PostDoc Researcher</h3>
+                        <h3 class="location"> University of Calgary, Canada</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In semper lacus tortor, quis
+                            bibendum
+                            odio mattis vitae. Cras porta massa pretium auctor congue. Suspendisse ante massa, euismod
+                            sit amet sem sed, viverra tristique diam.</p>
 
-                </div>
+                    </div>
 
-                <div class="experience-content">
-                    <span class="experience-period"> 07/2012 - 06/2014</span>
-                    <h3 class="speciality-name"> Researcher</h3>
-                    <h3 class="location"> University of Potsdam, Germany</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In semper lacus tortor, quis bibendum
-                        odio mattis vitae. Cras porta massa pretium auctor congue. Suspendisse ante massa, euismod
-                        sit amet sem sed, viverra tristique diam.</p>
+                    <div class="experience-content">
+                        <span class="experience-period"> 07/2012 - 06/2014</span>
+                        <h3 class="speciality-name"> Researcher</h3>
+                        <h3 class="location"> University of Potsdam, Germany</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In semper lacus tortor, quis
+                            bibendum
+                            odio mattis vitae. Cras porta massa pretium auctor congue. Suspendisse ante massa, euismod
+                            sit amet sem sed, viverra tristique diam.</p>
 
-                </div>
+                    </div>
 
-                <div class="experience-content">
-                    <span class="experience-period"> 09/2010 - 06/2012</span>
-                    <h3 class="speciality-name"> Researcher</h3>
-                    <h3 class="location"> University of Hamburg, Germany</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In semper lacus tortor, quis bibendum
-                        odio mattis vitae. Cras porta massa pretium auctor congue. Suspendisse ante massa, euismod
-                        sit amet sem sed, viverra tristique diam.</p>
+                    <div class="experience-content">
+                        <span class="experience-period"> 09/2010 - 06/2012</span>
+                        <h3 class="speciality-name"> Researcher</h3>
+                        <h3 class="location"> University of Hamburg, Germany</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In semper lacus tortor, quis
+                            bibendum
+                            odio mattis vitae. Cras porta massa pretium auctor congue. Suspendisse ante massa, euismod
+                            sit amet sem sed, viverra tristique diam.</p>
 
-                </div>
+                    </div>
 
                 </div>
             </div> <!-- cols end -->
